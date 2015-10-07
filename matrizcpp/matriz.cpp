@@ -1,6 +1,7 @@
 #include "matriz.h"
 
-Matriz::Matriz(int _nlin=0, int _ncol=0){
+Matriz::Matriz(int _nlin, int _ncol) //_nlin=0 and _ncol=0 are not allowed. This is a redefeinition of a default argument, which is not allowed
+{
   nlin = _nlin; ncol = _ncol;
   if(nlin == 0 || ncol == 0){
     x = 0;
